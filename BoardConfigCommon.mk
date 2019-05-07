@@ -41,6 +41,21 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := kryo385
 
+# A/B
+AB_OTA_UPDATER := true
+
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    odm \
+    product \
+    recovery \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor
+
 # Audio
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
 AUDIO_FEATURE_ENABLED_A2DP_OFFLOAD := false
