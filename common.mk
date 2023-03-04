@@ -245,6 +245,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom.ramdisk \
     init.class_main.sh \
     init.oplus_extras.rc \
+    init.kona.post_boot.sh \
     init.oplus.rc \
     init.oplus.sh \
     init.oplus.touch.rc \
