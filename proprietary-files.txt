@@ -98,6 +98,10 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcvirt.so
 
+# Audio - from cheetah-user 13 TQ3A.230705.001 10216780 release-keys
+vendor/lib/soundfx/libspatialaudio.so
+vendor/lib64/soundfx/libspatialaudio.so
+
 # Bluetooth
 odm/etc/bt/htnv20.bin
 odm/etc/bt/htnv20_ch1.bin
