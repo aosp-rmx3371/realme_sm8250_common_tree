@@ -32,6 +32,14 @@ static const variant_info_t RMX2076_IN_info = {
     .name = "RMX2076",
 };
 
+static const variant_info_t RMX3371_IN_info = {
+    .prjversion_value = "19805",
+
+    .device = "RE54E4L1",
+    .model = "RMX3371",
+    .name = "RMX3371",
+};
+
 static const variant_info_t RMX3370_CN_info = {
     .prjversion_value = "21619",
 
