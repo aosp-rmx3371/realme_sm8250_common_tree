@@ -80,6 +80,7 @@ static const std::vector<variant_info_t> variants = {
     RMX3370_CNLZ_info,
     RMX3370_GLOBAL_info,
     RMX3370_IN_info,
+    RMX3371_IN_info,
 };
 
 void vendor_load_properties() {
