@@ -18,6 +18,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.oplus_extras.rc",
+    src: "init.oplus_extras.rc",
+    sub_dir: "init",
+    device_specific: true,
+}
+
+prebuilt_etc {
     name: "init.qcom.rc",
     src: "init.qcom.rc",
     sub_dir: "init/hw",
@@ -41,6 +48,13 @@ prebuilt_etc {
 prebuilt_etc {
     name: "init.oplus.touch.rc",
     src: "init.oplus.touch.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.spartan.rc",
+    src: "init.spartan.rc",
     sub_dir: "init",
     vendor: true,
 }

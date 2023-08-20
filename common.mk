@@ -252,10 +252,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
-# Doze
-PRODUCT_PACKAGES += \
-    OplusDoze
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
@@ -275,6 +271,10 @@ PRODUCT_COPY_FILES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
+
+# CameraGo V4
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V4
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -315,11 +315,13 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.ramdisk \
     init.class_main.sh \
+    init.oplus_extras.rc \
     init.oplus.rc \
     init.oplus.sh \
     init.oplus.touch.rc \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
+    init.spartan.rc \
     init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.recovery.rc \
@@ -337,10 +339,6 @@ PRODUCT_PACKAGES += \
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.oplus
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.oplus
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -406,7 +404,7 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, hardware/oplus/overlay/qssi/qssi.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-evolution
 
 PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
@@ -416,6 +414,10 @@ PRODUCT_PACKAGES += \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
     OPlusTetheringResCommon \
+    EvolutionFrameworksResCommon \
+    OPlusExtrasResCommon \
+    EvolutionSettingsProviderResCommon \
+    EvolutionSettingsResCommon \
     WifiResTarget
 
 # Partition
