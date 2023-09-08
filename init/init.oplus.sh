@@ -10,7 +10,7 @@ if grep -q simcardnum.doublesim=1 /proc/cmdline; then
 fi
 
 # NFC
-if [ "$prjname" = "19805" ] then
+if [ "$prjname" = "21733" ] then
     setprop persist.vendor.nfc.config_file_name "libnfc-nxp-19805.conf"
 fi
 
