@@ -345,6 +345,7 @@ PRODUCT_PACKAGES += \
     FrameworksResTarget \
     OPlusCarrierConfigResCommon \
     OPlusFrameworksResCommon \
+    OPlusNfcResCommon \
     OPlusSettingsResCommon \
     OPlusSystemUIResCommon \
     OPlusTetheringResCommon \
