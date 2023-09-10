@@ -995,6 +995,8 @@ vendor/lib64/libsdmutils.so
 # Display (SDM)
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
+vendor/lib/libdpps.so
+vendor/lib64/libdpps.so
 vendor/lib64/libgame_enhance.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libsdedrm.so
