@@ -255,7 +255,6 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.spartan.rc \
-    init.qcom.power.rc \
     init.qcom.rc \
     init.qcom.recovery.rc \
     init.qcom.sh \
