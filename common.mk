@@ -279,6 +279,9 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.oplus
 
 # Media
+TARGET_USES_CUSTOM_C2_MANIFEST := true
+GENERIC_ODM_IMAGE := true
+
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
