@@ -24,7 +24,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, vendor/realme/sm8250-common/sm8250-common-vendor.mk)
 
 # Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
+$(call inherit-product-if-exists, hardware/dolby/dolby.mk)
 
 # ANT
 PRODUCT_PACKAGES += \
