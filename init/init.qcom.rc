@@ -244,6 +244,9 @@ on boot
     chown system system /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
     chown system system /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us
     chown system system /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us
+    chown system system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+    chown system system /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
 
     chmod 0664 /dev/cpu_dma_latency
     chmod 0664 /sys/class/devfreq/soc:qcom,cpubw/bw_hwmon/hyst_trigger_count
@@ -265,6 +268,9 @@ on boot
     chmod 0666 /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us
     chmod 0666 /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us
     chmod 0666 /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us
+    chmod 0666 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    chmod 0666 /sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq
+    chmod 0666 /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
 
 
     # Create hvdcp_opti directory
